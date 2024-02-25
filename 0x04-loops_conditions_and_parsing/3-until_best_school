@@ -2,7 +2,7 @@
 #this script using until loop to print best school *10
 
 count=0
-until (( $count == 10 ))
+until (( $count eq 10 ))
 do
 	echo "Best School"
 	((count++))
