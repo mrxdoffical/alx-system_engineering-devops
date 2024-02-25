@@ -2,12 +2,13 @@
 #this script using while loop to print best school *10
 
 count=0
+
 while [ $count -lt 10 ]
 do
 	if [ $count -eq 9 ]
 	then
 		echo "Hi"
 	fi
-		echo "best school"
-		((count++))
+	echo "best school"
+	(( count++ ))
 done
