@@ -2,6 +2,7 @@
 #this script cuts first dash
 
 list=$(ls)
-for i in $list; do
+for i in $list;
+do
 	echo "$i" | cut -d '_' -f2
 done
