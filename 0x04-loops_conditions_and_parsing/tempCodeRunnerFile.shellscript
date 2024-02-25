@@ -1,2 +1,1 @@
-	echo "$min"
-			(( min++ ))
+fi
