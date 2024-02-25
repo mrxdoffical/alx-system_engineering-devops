@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #this script using until loop to print best school *10
 
-count=10
-until (( $count == 0 ))
+count=0
+until (( $count == 10 ))
 do
 	echo "Best School"
-	((count--))
+	((count++))
 done
