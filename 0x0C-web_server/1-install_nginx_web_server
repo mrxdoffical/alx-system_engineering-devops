@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
-#creating web server and this thing is so interesting i almost forgot about the task and continue exploring
+# Commands to install Nginx on Web-Sever-01
 
+# Updating Packages before making Installations
 sudo apt-get update
-sudo apt-get install nginx
-sudo ufw 'Nginx HTTP'
+sudo apt-get -y install nginx
 
+sudo ufw allow 'Nginx HTTP'
+
+# Creating an index.html page
 echo "Hello World!" | sudo tee /var/www/html/index.html
-#testing nginx configuration
+
 sudo nginx -t
 
-sudo service nginx reload
+sudo service nginx start
