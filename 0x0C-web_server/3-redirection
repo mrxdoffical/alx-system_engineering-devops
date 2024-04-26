@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# curling smthing
+curl -sI 52.91.154.25/redirect_me
+
+sudo apt-get update
+sudo apt-get install -y nginx
+
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+string_for_replacement="server_name _;\n\trewrite ^\redirect_me https:\/\/github.com\/mrxdoffical permanent;"
+
+sudo sed -i "s/server_name_;/$string_for_replacement" /etc/nginx/sites-enabled/default
+
+sudo service nginx restart
