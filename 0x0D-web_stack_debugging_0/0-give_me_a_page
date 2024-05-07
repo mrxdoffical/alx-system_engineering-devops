@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this script to fix curling
+sudo service apache2 start
