@@ -1,0 +1,27 @@
+Title: Understanding the Journey of a Web Request: From Typing "https://www.google.com" to Seeing the Search Results
+
+URL: [Your LinkedIn or Medium URL]
+
+---
+
+Ever wondered what happens behind the scenes when you type "https://www.google.com" into your browser and hit Enter? Let's take a concise journey through the key steps involved.
+
+1. **DNS Request**: Your browser first sends a Domain Name System (DNS) request to translate the human-readable domain name "www.google.com" into an IP address. This request goes to a DNS resolver, which checks its cache or forwards the request until it finds the authoritative DNS server for Google.
+
+2. **TCP/IP**: Once the IP address is obtained, your browser initiates a Transmission Control Protocol (TCP) connection to that IP address over the Internet Protocol (IP). This forms the basis of communication between your browser and Google's servers.
+
+3. **Firewall**: The request passes through firewalls, which act as barriers to filter out potentially harmful traffic and ensure only legitimate requests reach Google's servers.
+
+4. **HTTPS/SSL**: Since we're using "https://" in our URL, a secure connection is established using the Hypertext Transfer Protocol Secure (HTTPS) and Secure Sockets Layer (SSL) protocols. This encrypts the data exchanged between your browser and Google, ensuring privacy and security.
+
+5. **Load-Balancer**: Google likely employs load balancers to distribute incoming requests across multiple servers. This ensures optimal performance and prevents any single server from becoming overwhelmed.
+
+6. **Web Server**: The request reaches one of Google's web servers, which hosts the Google Search page. The web server processes the request and generates the appropriate HTML response.
+
+7. **Application Server**: If the request requires dynamic content, it may be passed to an application server. In Google's case, this could involve executing complex algorithms to generate personalized search results based on various factors.
+
+8. **Database**: If necessary, the application server interacts with Google's databases to retrieve additional information, such as user preferences or indexed web pages.
+
+Finally, the response travels back through the same chain of components, ultimately rendering the Google Search page in your browser.
+
+In conclusion, what seems like a simple action of typing a URL and pressing Enter involves a sophisticated orchestration of various technologies working seamlessly together to deliver the desired web content. Understanding this process sheds light on the intricate workings of the internet and the remarkable infrastructure supporting our online experiences.
